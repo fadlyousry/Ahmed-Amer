@@ -1,0 +1,210 @@
+:root {
+  --primary-color: #1e2e45;
+  --secondary-color: #ffd700;
+  --dark-color: #333;
+  --light-color: #f4f4f4;
+  --white: #fff;
+  --black: #000;
+  --transition: all 0.3s ease;
+}
+
+body {
+  font-family: "Tajawal", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h5 {
+  font-weight: bold;
+}
+
+.main {
+  background: linear-gradient(135deg, #1e2e45, #2c3e50);
+  color: white;
+  padding-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar {
+  background-color: transparent;
+}
+
+.navbar-brand h1 {
+  color: #ffd700;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.nav-link {
+  color: #ccc !important;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ffd700 !important;
+}
+
+/* Hero Section */
+
+.hero {
+  min-height: calc(100vh - 70px);
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 70px;
+}
+
+.hero-img-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-image: url('../images/image copy 3.png');
+  background-size: cover;
+  background-position: right center;
+  opacity: 0.3;
+  border-radius: 0 20px 20px 0;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* About Image */
+.about-me {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  color: #1e2e45;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #1e2e45;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #ecc900;
+  color: #1e2e45;
+}
+
+.btn-outline-primary {
+  border-color: #1e2e45;
+  color: #1e2e45;
+}
+
+.btn-outline-primary:hover {
+  background-color: #1e2e45;
+  color: white;
+}
+
+
+/* Special Fields Section */
+#fields .bg-light {
+  background-color: #f0f0f0 !important;
+  border-radius: 12px;
+  transition: background 0.3s ease;
+}
+
+#fields .bg-light:hover {
+  background-color: #ffd700 !important;
+  color: #1e2e45;
+}
+
+/* Inputs */
+textarea,
+input[type="text"],
+input[type="email"] {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* Images */
+.section-img,
+.faq-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* FAQ */
+.faq-img {
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.faq-img {
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-height: 300px;
+  object-fit: cover;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .hero-img,
+  .faq-img {
+    max-height: 200px;
+  }
+
+  h2,
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .hero-img-bg {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
