@@ -1,0 +1,25 @@
+{
+  "theme_color": "#1D448BFF",
+  "background_color": "#F6F2CFFF",
+  "icons": [
+    {
+      "purpose": "maskable",
+      "sizes": "512x512",
+      "src": "icon-512x512.png",
+      "type": "image/png"
+    },
+    {
+      "purpose": "any",
+      "sizes": "512x512",
+      "src": "icon-512x512.png",
+      "type": "image/png"
+    }
+  ],
+  "orientation": "any",
+  "display": "standalone",
+  "dir": "auto",
+  "lang": "en-US",
+  "name": "My profile",
+  "short_name": "myprofile",
+  "start_url": "/index.html"
+}
